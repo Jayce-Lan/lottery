@@ -13,7 +13,7 @@ window.onload = function() {
             clearInterval(timer);
             timer = setInterval(function() {
                 show();
-            }, 60);
+            }, 50);
 
             start.innerHTML = "&nbsp;停止";
             start.style.backgroundColor = "#BD1B0A";
@@ -65,14 +65,19 @@ window.onload = function() {
     function show() {
         var rowNum = random(1, 12); //生成1-11排
         var seatNum;
-        if (rowNum == 6 || rowNum == 7) {
-            seatNum = random(1, 12)
-        } else if (rowNum == 10) {
-            seatNum = random(1, 17)
-        } else if (rowNum == 11) {
-            seatNum = random(1, 20)
-        } else {
-            seatNum = random(1, 14)
+
+        switch (rowNum) {
+            case 6:
+            case 7:
+                seatNum = random(1, 12);
+                break;
+            case 10:
+                seatNum = random(1, 17);
+                break;
+            case 11:
+                seatNum = random(1, 20);
+            default:
+                seatNum = random(1, 14);
         }
 
         rowNum = doubleNum(rowNum);
