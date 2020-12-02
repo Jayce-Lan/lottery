@@ -17,7 +17,7 @@
 
 
 
-![主界面](D:\MyProject\lottery\manual_img\主界面.png)
+![主界面](.\manual_img\主界面.png)
 
 
 
@@ -49,7 +49,7 @@
 
 
 
-![抽奖界面](D:\MyProject\lottery\manual_img\抽奖界面.png)
+![抽奖界面](.\manual_img\抽奖界面.png)
 
 
 
